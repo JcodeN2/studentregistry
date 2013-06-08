@@ -1,0 +1,9 @@
+div
+  h1 Student Directory
+    
+div 
+  a.table-button href='#' 
+    | Table View
+  
+  a.thumbnail-button href='#'
+    | Thumbnail View

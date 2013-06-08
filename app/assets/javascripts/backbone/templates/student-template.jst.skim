@@ -1,0 +1,20 @@
+/ img src= "{#photo}"
+//src="#{@photo}?????"
+h3 
+  =@first_name 
+  |  
+  =@last_name
+
+/ div 
+/   | Email: =@email
+
+/ div
+/   | Git Hub Account: =@github
+
+div
+  | Fun Fact: 
+  =@first_name 
+  |  is super cool and awesome
+
+button.back
+  | Back

@@ -1,0 +1,2 @@
+/ img.icon src= "{#@photo}"
+div.block =@first_name
