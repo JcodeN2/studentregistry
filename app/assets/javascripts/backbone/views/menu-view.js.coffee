@@ -14,6 +14,7 @@ window.MenuView = Backbone.View.extend(
   events:
     "click .table-button": "table"
     "click .thumbnail-button": "thumbnail"
+    "click .add-button": "add"
 
   initialize: ->
     
@@ -22,12 +23,15 @@ window.MenuView = Backbone.View.extend(
     window.thumbnailTemplate = JST["backbone/templates/thumbnail-template"]
     window.tableTemplate = JST["backbone/templates/table-template"]
     window.studentTemplate = JST["backbone/templates/student-template"]
+    window.updateTemplate = JST["backbone/templates/update-template"]
+    window.addTemplate = JST["backbone/templates/add-template"]
+
     
     # Render & Append the view when it is instantiated
     @render()
     $(".menu").append @$el
     
-    # If a student is added make a new view
+    # make a new table view for each student
     aprClass.each (student) ->
       new TableView(model: student)
 
@@ -57,6 +61,13 @@ window.MenuView = Backbone.View.extend(
     aprClass.each (student) ->
       new ThumbnailView(model: student)
 
+  add: ->
+    $(".add-button").hide()
+    $(".thumbnail-button").hide()
+    $(".table-button").hide()
+    $(".table-view").html ""
+    $(".class-th").html ""
+    new AddView()
 )
 
 # //Instatiate Menu View on page load

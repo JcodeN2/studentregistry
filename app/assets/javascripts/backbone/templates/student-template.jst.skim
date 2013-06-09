@@ -16,5 +16,7 @@ div
   =@first_name 
   |  is super cool and awesome
 
+button.edit
+  | Edit
 button.back
   | Back

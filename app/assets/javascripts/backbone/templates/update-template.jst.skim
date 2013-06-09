@@ -1,0 +1,19 @@
+.inline
+  div
+    | First:
+    input.first-input value='#{@first_name}'
+  div
+    | Last:
+    input.last-input value='#{@last_name}'
+/ div
+/   | Email:
+/   input.email-input value=(email)
+/ div
+/   | GitHub:
+/   input.github-input value=(github)
+/ div
+/   | Photo URL:
+/   input.photo-input value=(photo)
+.buttons
+  button.save Save
+  button.cancel Cancel

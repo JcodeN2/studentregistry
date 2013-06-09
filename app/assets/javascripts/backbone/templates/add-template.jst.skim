@@ -1,0 +1,19 @@
+.inline
+  div
+    | First:
+    input.first-input/
+  div
+    | Last:
+    input.last-input/
+/ div
+/   | Email:
+/   input.email-input
+/ div
+/   | GitHub:
+/   input.github-input
+/ div
+/   | Photo URL:
+/   input.photo-input
+.buttons
+  button.save Save
+  button.cancel Cancel

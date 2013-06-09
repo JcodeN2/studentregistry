@@ -3,7 +3,10 @@ div
     
 div 
   a.table-button href='#' 
-    | Table View
+    |[Table View] 
   
   a.thumbnail-button href='#'
-    | Thumbnail View
+    |[Thumbnail View] 
+
+  a.add-button href='#'
+    | [Add Student]
