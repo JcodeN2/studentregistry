@@ -14,3 +14,5 @@ window.StudentRegistry =
 #Instatiate Menu View on page load
 $(document).ready ->
   MenuViewOrigin = new MenuView()
+
+

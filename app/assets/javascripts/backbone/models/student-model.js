@@ -5,5 +5,7 @@ Student = Backbone.Model.extend({
     email: '',
     github: '',
     photo: ''
-     }
+     },
+
+  paramRoot: 'student'
 });

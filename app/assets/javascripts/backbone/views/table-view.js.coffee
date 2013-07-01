@@ -13,6 +13,7 @@ window.TableView = Backbone.View.extend(
   # Listen for a click on the mini icon
   events:
     "click .icon-envelope": "details"
+    "click .icon-remove": "remove"
 
   
   # Render & Append the view when it is instantiated
@@ -23,6 +24,7 @@ window.TableView = Backbone.View.extend(
     $(".thumbnail-button").show()
     @render()
     $(".table").append @$el
+
 
   
   # If a student is added make a new view (may need later)
@@ -44,13 +46,17 @@ window.TableView = Backbone.View.extend(
     
     #Instatiate view with model that was clicked
     new StudentViewT(model: @model)
+
+  remove: ->
+    @model.destroy()
+    @$el.html ""
 )
 
 #Manually Add the Student models to the class collection
-aprClass.add [
-  first_name: "Andrew"
-  last_name: "McIntee"
-,
-  first_name: "Jen"
-  last_name: "Ngetich"
-]
+# aprClass.add [
+#   first_name: "Andrew"
+#   last_name: "McIntee"
+# ,
+#   first_name: "Jen"
+#   last_name: "Ngetich"
+# ]

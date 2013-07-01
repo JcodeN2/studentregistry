@@ -1,5 +1,7 @@
 Class = Backbone.Collection.extend({
-  model: Student
+  model: Student,
+  url: '/students'
+
 });
 
 aprClass = new Class();

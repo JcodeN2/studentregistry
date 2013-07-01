@@ -58,6 +58,7 @@ window.StudentViewTh = Backbone.View.extend(
       # github: @$el.find(".github-input").val()
       # email: @$el.find(".email-input").val()
       # photo: @$el.find(".photo-input").val()
+    @model.save
 
     @$el.html studentTemplate(@model.attributes)
 )

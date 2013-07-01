@@ -7,3 +7,5 @@ td
   / = @email  
 / td
 /   = @github
+td 
+  i.icon-large.icon-remove

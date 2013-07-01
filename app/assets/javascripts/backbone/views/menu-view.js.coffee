@@ -32,6 +32,7 @@ window.MenuView = Backbone.View.extend(
     $(".menu").append @$el
     
     # make a new table view for each student
+    aprClass.fetch()
     aprClass.each (student) ->
       new TableView(model: student)
 
@@ -47,6 +48,7 @@ window.MenuView = Backbone.View.extend(
     $(".class-th").html ""
     
     #loop through class collection, make view for each model
+
     aprClass.each (student) ->
       new TableView(model: student)
 
